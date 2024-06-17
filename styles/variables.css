@@ -1,0 +1,46 @@
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
+:root {
+  --accent-color: #FF8DCB;
+  --bg-color: #FFF1F7;
+  --bg-image: url(../images/cover-image-light.png);
+  --main-title-color: #FFC2E6;
+  --main-text-color: #353430;
+  --title-color: #353430;
+  --paragraph-title-color: #353430;
+  --text-decoration-color: #FF0070;
+  --main-font-size: 18px;
+  --main-padding: 20px;
+  --corrector-main-padding: -20px;
+  --main-font:"IBM Plex mono";
+  --page-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --header-title-margin-block-end: 114px;
+  --header-title-margin-block-start: 274.5px;
+  --header-text-margin-block-end: 134px;
+  --footer-title-padding-block: 319px;
+  --button-hover: rgba(50, 49, 45, 0.40);
+}
+
+@media (width <= 768px) {
+  :root {
+     --page-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+     --header-title-margin-block-end: 162px;
+     --header-title-margin-block-start: 443px;
+     --header-text-margin-block-end: 183px;
+     --footer-title-padding-block: 462px;
+  }
+}
+
+@media (width <= 375px) {
+  :root {
+     --main-padding: 10px;
+     --corrector-main-padding: -10px;
+     --page-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+     --header-title-margin-block-end: 55px;
+     --header-title-margin-block-start: 238px;
+     --header-text-margin-block-end: 66px;
+     --footer-title-padding-block: 286px;
+  }
+}

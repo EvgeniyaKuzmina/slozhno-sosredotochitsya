@@ -1,0 +1,17 @@
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+.page.theme_light {
+  --accent-color: #FF8DCB;
+  --bg-color: #FFF1F7;
+  --bg-image: url(../images/cover-image-light.png);
+  --main-title-color: #FFC2E6;
+  --main-text-color: #353430;
+  --title-color: #353430;
+  --paragraph-title-color: #353430;
+  --text-decoration-color: #FF0070;
+  --button-hover: rgba(50, 49, 45, 0.40);
+}
